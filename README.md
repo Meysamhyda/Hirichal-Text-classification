@@ -29,12 +29,9 @@ We replicate the TELEClass framework and replace the original encoder with **BER
 |---------|-------------|-------------|-------------|--------|------------|
 | BERT    | 0.2399      | 0.1647      | 0.1515      | 0.1714 | 0.1553     |
 | DeBERTa | 0.2399      | 0.2474      | 0.2067      | 0.1906 | 0.2099     |
-| Simple Classifier (from paper) | 0.8505 | --- | 0.6421 | 0.6865 | 0.6483 |
+
 
 **Observation**: DeBERTa outperforms BERT across most metrics, but both models perform lower compared to the original simple classifier from the TELEClass paper.
 
 
 
-# Hirichal-Text-classification
-# Hirichal-Text-classification
-# Hirichal-Text-classification
