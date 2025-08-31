@@ -24,7 +24,7 @@ We replicate the TELEClass framework and replace the original encoder with **RoB
 | DeBERTa | 0.2399      | 0.2474      | 0.2067      | 0.1906 | 0.2099     |
 
 
-**Observation**: DeBERTa outperforms BERT across most metrics, but both models perform lower compared to the original simple classifier from the TELEClass paper.
+**Observation**: DeBERTa outperforms RoBERTa across most metrics, but both models perform lower compared to the original simple classifier from the TELEClass paper because training model on 2 epochs.
 
 
 
