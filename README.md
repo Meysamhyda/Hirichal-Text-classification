@@ -3,16 +3,9 @@
 This repository contains the implementation of experiments based on the paper:  
 **TELEClass: Taxonomy Enrichment and LLM-Enhanced Hierarchical Text Classification with Minimal Supervision**.  
 
-We replicate the TELEClass framework and replace the original encoder with **BERT** and **DeBERTa** to evaluate their effectiveness in hierarchical text classification.
+We replicate the TELEClass framework and replace the original encoder with **RoBERTa** and **DeBERTa** to evaluate their effectiveness in hierarchical text classification.
 
 ---
-
-## 📌 Project Structure
-- `data/` : Datasets used for training and evaluation  
-- `models/` : Scripts for loading BERT and DeBERTa models  
-- `training/` : Training scripts for hierarchical classification  
-- `results/` : Experimental results (tables, logs, and figures)  
-- `README.md` : Project description  
 
 ---
 
