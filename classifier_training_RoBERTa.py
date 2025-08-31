@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
     class_emb = torch.load(os.path.join(args.data_dir, args.dataset, 'class_emb.pt'))
 
-    model = ClassModel('thainq107/deberta-v3-base-amazon-reviews-multi-fp16', 768, class_emb).to(f'cuda:{args.gpu}')
+    model = ClassModel('FacebookAI/roberta-base', 768, class_emb).to(f'cuda:{args.gpu}')
 
     no_decay = ["bias", "LayerNorm.weight"]
     optimizer_grouped_parameters = [
@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
 
     model.zero_grad()
-    for e in range(args.epoch):
+    for e in range(1,args.epoch+1):
         print(f'Training epoch: {e}')
         total_train_loss = 0
         for j, batch in enumerate(tqdm(data_loader)):
@@ -60,5 +60,5 @@ if __name__ == '__main__':
 
         print(f'Epoch {e}', total_train_loss / j)
 
-    torch.save(model.state_dict(), os.path.join(args.data_dir, args.dataset, f'train/model_with_DeBERTa.pt'))
+    torch.save(model.state_dict(), os.path.join(args.data_dir, args.dataset, f'train/model_with_RoBERTa.pt'))
     

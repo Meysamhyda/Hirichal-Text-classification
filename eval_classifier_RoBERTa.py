@@ -64,7 +64,7 @@ if __name__ == '__main__':
     tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
 
     class_emb = torch.load(os.path.join(args.data_dir, args.dataset, 'class_emb.pt'))
-    model = ClassModel('thainq107/deberta-v3-base-amazon-reviews-multi-fp16', 768, class_emb).to(f'cuda:{args.gpu}')
+    model = ClassModel('FacebookAI/roberta-base', 768, class_emb).to(f'cuda:{args.gpu}')
     model.load_state_dict(torch.load(args.model_pth, map_location=f'cuda:{args.gpu}'))
 
 
