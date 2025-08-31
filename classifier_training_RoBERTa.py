@@ -14,7 +14,7 @@ if __name__ == '__main__':
     parser.add_argument('--data_dir', type=str, help='dataset directory')
     parser.add_argument('--dataset', type=str, help='dataset name')
     parser.add_argument('--batch_size', default=8, type=int)
-    parser.add_argument('--epoch', default=3, type=int)
+    parser.add_argument('--epoch', default=2, type=int)
     parser.add_argument('--lr', default=5e-5, type=float)
     parser.add_argument('--gpu', default=0, type=int)
     args = parser.parse_args()
