@@ -27,7 +27,7 @@ We replicate the TELEClass framework and replace the original encoder with **BER
 
 | Model   | Precision@1 | Precision@2 | Precision@3 | MRR    | Example F1 |
 |---------|-------------|-------------|-------------|--------|------------|
-| BERT    | 0.2399      | 0.1647      | 0.1515      | 0.1714 | 0.1553     |
+| RoBERTa  | 0.2399      | 0.1647      | 0.1515      | 0.1714 | 0.1553     |
 | DeBERTa | 0.2399      | 0.2474      | 0.2067      | 0.1906 | 0.2099     |
 
 
